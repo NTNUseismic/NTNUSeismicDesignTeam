@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team - NTNU Seismic Competition Team</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.svg" alt="NTNU Seismic Team Logo" width="50" height="50">
+                <span>NTNU Seismic Design Team</span>
+            </a>
+            <nav class="nav">
+                <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="nav-toggle__bar"></span>
+                    <span class="nav-toggle__bar"></span>
+                    <span class="nav-toggle__bar"></span>
+                </button>
+                <ul class="nav__list" id="nav-menu" aria-hidden="true">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="team.html" aria-current="page">Team</a></li>
+                    <li><a href="subteams.html">Subteams</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="section section--accent">
+            <div class="container">
+                <h1>Our Team</h1>
+                <p class="lead">Meet the dedicated members of the NTNU Seismic Competition Team.</p>
+                
+                <div class="team-grid">
+                    <article class="card">
+                        <div class="avatar">DR</div>
+                        <h3>Daniel Ringrose</h3>
+                        <p>Team Lead</p>
+                    </article>
+                    
+                    <article class="card">
+                        <div class="avatar">RT</div>
+                        <h3>Rhys Tendernes</h3>
+                        <p>Financial Lead</p>
+                    </article>
+                    
+                    <article class="card">
+                        <div class="avatar">SK</div>
+                        <h3>Sophia Kim</h3>
+                        <p>Marketing Lead</p>
+                    </article>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 NTNU Seismic Competition Team. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

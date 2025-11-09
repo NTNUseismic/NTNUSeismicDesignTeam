@@ -1,0 +1,79 @@
+/* NTNU Seismic Competition Team styles (site.css)
+   This file contains the new layout and component styles for the placeholder site.
+*/
+:root{
+  --accent: #0b2540;
+  --accent-2: #00aaff;
+  --muted: #6b7280;
+  --container: 1100px;
+}
+
+/* Reset base font and container */
+html,body{height:100%;}
+body{font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color:#0b2540; background:#f4f8fb; margin:0; -webkit-font-smoothing:antialiased;}
+.container{max-width:var(--container);margin:0 auto;padding:0 20px;}
+
+/* Header */
+.site-header{background:var(--accent);color:#fff;position:sticky;top:0;z-index:1200;box-shadow:0 2px 8px rgba(11,37,64,0.12);}
+.header-inner{display:flex;align-items:center;justify-content:space-between;height:72px;}
+.brand{display:flex;align-items:center;gap:12px;color:#fff;text-decoration:none}
+.brand-logo{width:46px;height:46px;border-radius:8px;background:#fff;color:var(--accent);display:flex;align-items:center;justify-content:center;font-weight:700}
+.brand-text{font-weight:600;font-size:1rem}
+
+.nav{display:flex;align-items:center}
+.nav__list{display:flex;gap:18px;list-style:none;margin:0;padding:0;align-items:center}
+.nav__list a{color:#fff;text-decoration:none;padding:8px 10px;border-radius:6px;transition:all .12s}
+.nav__list a:hover{background:rgba(255,255,255,0.06)}
+
+.nav-toggle{display:none;border:0;background:transparent;padding:8px;margin-left:8px;cursor:pointer}
+.nav-toggle .bar{display:block;width:22px;height:2px;background:#fff;margin:4px 0;border-radius:2px}
+
+/* Hero */
+.hero{padding:72px 0;background:linear-gradient(180deg,var(--accent),#08304a);color:#fff;text-align:center}
+.hero-inner{max-width:900px;margin:0 auto}
+.hero h1{font-size:2rem;margin-bottom:8px}
+.hero .lead{color:rgba(230,245,255,0.95);margin-bottom:18px}
+
+.btn{display:inline-block;background:var(--accent-2);color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:600}
+.btn--ghost{background:transparent;border:1px solid rgba(255,255,255,0.14);color:#fff}
+
+/* Sections */
+.section{padding:56px 0}
+.section--soft{background:#fff}
+.section--accent{background:#e9f6ff}
+
+.muted{color:var(--muted);max-width:900px}
+
+/* Grids & cards */
+.grid{display:grid;gap:18px}
+.team-grid{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.card{background:#fff;border-radius:12px;padding:18px;box-shadow:0 8px 24px rgba(15,23,42,0.06);text-align:left}
+.avatar{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;margin-bottom:10px}
+
+.projects-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.project-card{background:#fff;padding:16px;border-radius:10px;box-shadow:0 6px 18px rgba(15,23,42,0.04)}
+
+/* Contact form */
+.contact-form{max-width:720px}
+.form-row{margin-bottom:12px;display:flex;flex-direction:column}
+.form-row label{font-size:0.9rem;margin-bottom:8px;color:#123}
+.form-row input,.form-row textarea{padding:10px;border-radius:8px;border:1px solid #dbe8f5;background:#fff;font-family:inherit}
+.form-row--actions{display:flex;align-items:center;gap:12px}
+.form-status{color:var(--muted);font-size:0.95rem}
+.form-status.error{color:#b91c1c}
+
+/* Footer */
+.site-footer{background:#fff;padding:18px 0;border-top:1px solid #e6eef6;color:#123}
+.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.footer-inner a{color:var(--accent);text-decoration:none}
+
+/* Responsive behavior */
+@media (max-width:860px){
+  .nav__list{position:absolute;top:72px;right:0;background:var(--accent);flex-direction:column;padding:12px;border-radius:6px;min-width:180px}
+  .nav__list[aria-hidden="true"] {display: none}
+  .nav__list[aria-hidden="false"] {display: flex}
+  .nav-toggle{display:block}
+  .header-inner{padding:0 12px}
+  .hero h1{font-size:1.6rem}
+  .container{padding:0 16px}
+}

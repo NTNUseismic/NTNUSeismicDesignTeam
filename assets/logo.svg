@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-labelledby="logoTitle logoDesc">
+  <title id="logoTitle">NTNU Seismic Competition Team</title>
+  <desc id="logoDesc">Simple monogram NST in a rounded square</desc>
+  <rect width="100" height="100" rx="14" fill="#0b2540"/>
+  <text x="50" y="57" font-family="Inter, Arial, sans-serif" font-size="36" fill="#ffffff" font-weight="700" text-anchor="middle">NST</text>
+</svg>

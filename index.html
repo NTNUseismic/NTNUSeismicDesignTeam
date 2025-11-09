@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>NTNU Seismic Design Team</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+        <div class="container header__container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.svg" alt="NTNU Seismic Team Logo" width="50" height="50">
+                <span>NTNU Seismic Design Team</span>
+            </a>
+            <nav class="nav">
+                <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="nav-toggle__bar"></span>
+                    <span class="nav-toggle__bar"></span>
+                    <span class="nav-toggle__bar"></span>
+                </button>
+                <ul class="nav__list" id="nav-menu" aria-hidden="true">
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="subteams.html">Subteams</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+  <main id="main">
+      <section id="home" class="hero">
+        <div class="container hero-inner">
+          <h1>NTNU Seismic Design Team</h1>
+          <p class="lead">We are NTNU students competing in the International Seismic Design Competition</p>
+          <p>
+            <a class="btn" href="contact.html">Get in touch</a>
+            <a class="btn btn--ghost" href="about.html">Learn more</a>
+          </p>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <h2>About the Team</h2>
+          <div class="about-grid">
+            <div class="about-content">
+              <p class="lead">Established in 2025, the NTNU Seismic Design team is the first competition team focused on structural engineering at NTNU.</p>
+              
+              <h3>The Competition</h3>
+              <p>We participate in the Seismic Design Competition (SDC) organized by EERI's Student Leadership Council. This prestigious international competition challenges university teams to design, analyze, and build a cost-effective and architecturally innovative earthquake-resistant structure.</p>
+              
+              <h3>The Challenge</h3>
+              <p>Teams must design and construct a scaled balsa wood model of a multi-story tower that can withstand simulated ground motions on a shake table. The competition evaluates:</p>
+              <ul class="feature-list">
+                <li>Seismic Performance</li>
+                <li>Innovation in Design</li>
+                <li>Architecture & Sustainability</li>
+                <li>Cost Efficiency</li>
+              </ul>
+
+            </div>
+        </section>
+
+        <section class="portland-preview">
+          <div class="container">
+            <div class="portland-box">
+              <div class="portland-content">
+                <h2>Portland 2026</h2>
+                <p class="lead">The 2026 competition will be hosted in and designed based on Portland, USA. The design rules define a unique tower with negative space that poses difficult engineering challenges.</p>
+                <div class="portland-tower">
+                  <img src="assets/portland.png" alt="Portland 2026 Competition Tower Design" class="tower-image">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="about">
+          <div class="container">
+            <div class="about-image">
+              <img src="assets/new-eeri-logo-header-for-impexium.png" alt="EERI (Earthquake Engineering Research Institute) Logo" class="eeri-logo">
+              <p class="image-caption">Competition organized by the Earthquake Engineering Research Institute</p>
+              <a href="https://slc.eeri.org/sdc-2026/" class="btn btn--accent" target="_blank" rel="noopener noreferrer">Learn More About SDC</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section id="contact" class="section section--accent">
+        <div class="container">
+          <h2>Contact</h2>
+          <p class="muted">For enquiries, email us using the address below:</p>
+          <address>
+            <p>Email: <a href="mailto:contact@ntnu-seismic-team.no">ringrosedaniel@gmail.com</a></p>
+            <p>Address: Høgskoleringen 1, 7034 Trondheim, Norway</p>
+          </address>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>© <span id="year">2025</span> NTNU Seismic Competition Team</div>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
