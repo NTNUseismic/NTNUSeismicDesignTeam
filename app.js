@@ -34,11 +34,12 @@ document.addEventListener("DOMContentLoaded", () => {
           e.preventDefault();
           el.scrollIntoView({ behavior: 'smooth', block: 'start' });
           // close mobile nav after navigation
-          if (navList && navList.classList.contains('active')) {
-            navList.classList.remove('active');
-            menuButton && menuButton.classList.remove('is-active');
-            menuButton && menuButton.setAttribute('aria-expanded', 'false');
+          if (navList && navList.getAttribute('aria-hidden') === 'false') {
             navList.setAttribute('aria-hidden', 'true');
+            if (menuButton) {
+              menuButton.classList.remove('is-active');
+              menuButton.setAttribute('aria-expanded', 'false');
+            }
           }
         }
       }
