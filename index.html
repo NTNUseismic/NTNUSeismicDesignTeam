@@ -39,6 +39,27 @@
           <p>
             <a class="btn" href="contact.html">Get in touch</a>
             <a class="btn btn--ghost" href="about.html">Learn more</a>
+            <button id="shakeButton" class="btn btn--accent">Earthquake simulator</button>
+
+
+            <script>
+              const button = document.getElementById('shakeButton');
+
+              button.addEventListener('click', () => {
+                // Select elements to shake
+                const elements = document.querySelectorAll(
+                  'header, main, footer, .hero, .about, .portland-preview, .projects-grid'
+                );
+
+                // Add the shake class
+                elements.forEach(el => el.classList.add('shake'));
+
+                // Remove the shake class after 1 second
+                setTimeout(() => {
+                  elements.forEach(el => el.classList.remove('shake'));
+                }, 1000);
+              });
+            </script>
           </p>
         </div>
       </section>

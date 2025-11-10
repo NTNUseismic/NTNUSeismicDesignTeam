@@ -7,25 +7,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
+   <header class="header">
         <div class="container header__container">
-            <a href="index.html" class="logo">
-                <img src="assets/logo.svg" alt="NTNU Seismic Team Logo" width="50" height="50">
-                <span>NTNU Seismic Design Team</span>
-            </a>
+      <a href="index.html" class="logo">
+  <img src="assets/Logo_transparent_white.png" alt="NTNU Seismic Team Logo" class="header-logo" width="40" height="40">
+      </a>
             <nav class="nav">
-                <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="nav-toggle__bar"></span>
-                    <span class="nav-toggle__bar"></span>
-                    <span class="nav-toggle__bar"></span>
-                </button>
+        <button id="mobile_menu" class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="bar nav-toggle__bar"></span>
+          <span class="bar nav-toggle__bar"></span>
+          <span class="bar nav-toggle__bar"></span>
+        </button>
                 <ul class="nav__list" id="nav-menu" aria-hidden="true">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html" >Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="team.html">Team</a></li>
-                    <li><a href="subteams.html" aria-current="page">Subteams</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="subteams.html"aria-current="page">Subteams</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -37,15 +36,18 @@
                 <h1>Our Subteams</h1>
                 <p class="lead">Discover the specialized groups that make up our competition team.</p>
 
-                <div class="projects-grid">
+                    <div class="projects-grid">
                     <article class="project-card">
+                        <img src="assets/sap.png" alt="SAP2000 Logo" class="project-image">
                         <h3>Structural Analysis</h3>
                         <p>Designs and models the structural system under seismic loads using SAP2000.</p>
                     </article>
+                    </div>
+
 
                     <article class="project-card">
                         <h3>Architecture</h3>
-                        <p>Architectural aspects of the tower and the environmental impacta accessment.</p>
+                        <p>Architectural aspects of the tower and the environmental impact assessment.</p>
                     </article>
                     
 

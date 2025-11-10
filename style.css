@@ -504,8 +504,31 @@ body{font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvet
 .card{background:#fff;border-radius:12px;padding:18px;box-shadow:0 8px 24px rgba(15,23,42,0.06);text-align:left}
 .avatar{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;margin-bottom:10px}
 
-.projects-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
-.project-card{background:#fff;padding:16px;border-radius:10px;box-shadow:0 6px 18px rgba(15,23,42,0.04)}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: #fff;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.04);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+}
+
+.project-image {
+  width: 80px;
+  height: auto;
+  margin-bottom: 12px;
+}
 
 /* Contact form */
 .contact-form{max-width:720px}
@@ -1408,3 +1431,40 @@ body {
   width: auto;
   display: inline-block;
 }
+
+.social-links {
+  display: flex;
+  gap: 12px; /* spacing between icons */
+  align-items: center;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+
+@keyframes earthquake {
+  0%, 100% { transform: translate(0, 0) rotate(0); }
+  10% { transform: translate(-3px, -2px) rotate(-0.5deg); }
+  20% { transform: translate(3px, 1px) rotate(0.4deg); }
+  30% { transform: translate(-2px, 2px) rotate(-0.3deg); }
+  40% { transform: translate(2px, -3px) rotate(0.3deg); }
+  50% { transform: translate(-4px, 2px) rotate(-0.4deg); }
+  60% { transform: translate(3px, 3px) rotate(0.3deg); }
+  70% { transform: translate(-2px, -1px) rotate(-0.2deg); }
+  80% { transform: translate(1px, 3px) rotate(0.1deg); }
+  90% { transform: translate(-3px, 2px) rotate(-0.3deg); }
+}
+
+.shake {
+  animation: earthquake 0.6s ease-in-out infinite;
+}
+
