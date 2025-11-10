@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subteams - NTNU Seismic Competition Team</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header class="header">
+        <div class="container header__container">
+      <a href="index.html" class="logo">
+  <img src="assets/Logo_transparent_white.png" alt="NTNU Seismic Team Logo" class="header-logo" width="40" height="40">
+      </a>
+            <nav class="nav">
+        <button id="mobile_menu" class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="bar nav-toggle__bar"></span>
+          <span class="bar nav-toggle__bar"></span>
+          <span class="bar nav-toggle__bar"></span>
+        </button>
+                <ul class="nav__list" id="nav-menu" aria-hidden="true">
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="subteams.html"aria-current="page">Subteams</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="section">
+            <div class="container">
+                <h1>Our Subteams</h1>
+                <p class="lead">Discover the specialized groups that make up our competition team.</p>
+
+                    <div class="projects-grid">
+                    <article class="project-card">
+                        <img src="assets/sap.png" alt="SAP2000 Logo" class="project-image">
+                        <h3>Structural Analysis</h3>
+                        <p>Designs and models the structural system under seismic loads using SAP2000.</p>
+                    </article>
+                    </div>
+
+
+                    <article class="project-card">
+                        <h3>Architecture</h3>
+                        <p>Architectural aspects of the tower and the environmental impact assessment.</p>
+                    </article>
+                    
+
+                    <article class="project-card">
+                        <h3>Materials & Construction</h3>
+                        <p>Focuses on material selection, testing, and construction techniques for optimal building performance.</p>
+                    </article>
+                    
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 NTNU Seismic Competition Team. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

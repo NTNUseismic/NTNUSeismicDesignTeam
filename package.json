@@ -1,0 +1,13 @@
+{
+  "name": "ntnu-seismic-design-team-site",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "jsdom": "^22.0.0",
+    "@testing-library/jest-dom": "^5.16.5"
+  }
+}
