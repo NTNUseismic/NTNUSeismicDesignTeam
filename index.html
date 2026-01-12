@@ -49,12 +49,23 @@
             <a class="btn" href="contact.html">Get in touch</a>
             <a class="btn btn--ghost" href="about.html">Learn more</a>
             <button id="shakeButton" class="btn btn--accent">Earthquake simulator</button>
+            <span id="shakeCount" style="display: none; margin-top: 10px; width: 100%;"></span>
 
 
             <script>
               const button = document.getElementById('shakeButton');
+              const countDisplay = document.getElementById('shakeCount');
+              const apiUrl = 'https://api.counterapi.dev/v1/ntnuseismic/shakeButton';
 
               button.addEventListener('click', () => {
+                // Increment global count
+                fetch(apiUrl + '/up')
+                  .then(res => res.json())
+                  .then(data => {
+                    countDisplay.textContent = `Total earthquakes: ${data.count}`;
+                    countDisplay.style.display = 'block';
+                  });
+
                 // Select elements to shake
                 const elements = document.querySelectorAll(
                   'header, main, footer, .hero, .about, .portland-preview, .projects-grid'
