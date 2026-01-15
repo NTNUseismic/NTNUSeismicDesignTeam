@@ -160,6 +160,27 @@
       </div>
     </footer>
 
+    <div id="join-popup" class="popup" style="display: none;">
+      <button id="close-popup" class="popup-close" aria-label="Close popup">&times;</button>
+      <h3>Join us!</h3>
+      <p>NTNU Seismic is looking for new members.</p>
+    </div>
+
+    <script>
+      const popup = document.getElementById('join-popup');
+      if (!sessionStorage.getItem('popupShown')) {
+        popup.style.display = 'block';
+        sessionStorage.setItem('popupShown', 'true');
+      }
+      popup.addEventListener('click', function() {
+        window.location.href = 'contact.html';
+      });
+      document.getElementById('close-popup').addEventListener('click', function(e) {
+        e.stopPropagation();
+        popup.style.display = 'none';
+      });
+    </script>
+
     <script src="app.js"></script>
   </body>
 </html>
