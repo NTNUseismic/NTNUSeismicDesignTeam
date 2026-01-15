@@ -168,12 +168,9 @@
 
     <script>
       const popup = document.getElementById('join-popup');
-      if (!sessionStorage.getItem('popupShown')) {
-        popup.style.display = 'block';
-        sessionStorage.setItem('popupShown', 'true');
-      }
+      popup.style.display = 'block';
       popup.addEventListener('click', function() {
-        window.location.href = 'contact.html';
+        window.location.href = 'team.html';
       });
       document.getElementById('close-popup').addEventListener('click', function(e) {
         e.stopPropagation();
