@@ -9,33 +9,43 @@
 
 <url>
   <loc>https://ntnuseismic.no/</loc>
-  <lastmod>2026-01-11T21:21:11+00:00</lastmod>
+  <lastmod>2026-01-18T09:04:34+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://ntnuseismic.no/index.html</loc>
-  <lastmod>2026-01-11T21:21:11+00:00</lastmod>
+  <lastmod>2026-01-18T09:04:34+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://ntnuseismic.no/about.html</loc>
-  <lastmod>2026-01-11T21:21:11+00:00</lastmod>
+  <lastmod>2026-01-18T09:04:34+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://ntnuseismic.no/team.html</loc>
-  <lastmod>2026-01-11T21:21:11+00:00</lastmod>
+  <lastmod>2026-01-18T09:04:34+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://ntnuseismic.no/subteams.html</loc>
-  <lastmod>2026-01-11T21:21:11+00:00</lastmod>
+  <lastmod>2026-01-18T09:04:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ntnuseismic.no/Resources.html</loc>
+  <lastmod>2026-01-18T09:04:34+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://ntnuseismic.no/contact.html</loc>
-  <lastmod>2026-01-11T21:21:11+00:00</lastmod>
+  <lastmod>2026-01-18T09:04:34+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ntnuseismic.no/assets/SAP2000%20Introduction.pdf</loc>
+  <lastmod>2026-01-18T09:04:34+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 
