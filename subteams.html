@@ -3,15 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N6WW48L2GD"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-N6WW48L2GD');
-    </script>
     <title>Subteams - NTNU Seismic Competition Team</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
@@ -19,21 +10,21 @@
 <body>
    <header class="header">
         <div class="container header__container">
-      <a href="index.html" class="logo">
-  <img src="assets/Logo_transparent_white.png" alt="NTNU Seismic Team Logo" class="header-logo" width="40" height="40">
-      </a>
+            <a href="index.html" class="logo">
+                <img src="assets/Logo_transparent_white.png" alt="NTNU Seismic Team Logo" class="header-logo" width="40" height="40">
+            </a>
             <nav class="nav">
-        <button id="mobile_menu" class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="bar nav-toggle__bar"></span>
-          <span class="bar nav-toggle__bar"></span>
-          <span class="bar nav-toggle__bar"></span>
-        </button>
+                <button id="mobile_menu" class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="bar nav-toggle__bar"></span>
+                    <span class="bar nav-toggle__bar"></span>
+                    <span class="bar nav-toggle__bar"></span>
+                </button>
                 <ul class="nav__list" id="nav-menu" aria-hidden="true">
                     <li><a href="index.html" >Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="team.html">Team</a></li>
-                    <li><a href="subteams.html"aria-current="page">Subteams</a></li>
+                    <li><a href="subteams.html" aria-current="page">Subteams</a></li>
                     <li><a href="research.html">Research</a></li>
                     <li><a href="Resources.html">Resources</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -44,7 +35,7 @@
 
     <main id="main">
         <section class="hero hero--small" style="background-image: url('assets/Datalab.heic'); background-size: cover; background-position: center; position: relative; color: white;">
-            <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.6); z-index: 1;"></div>
+            <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.75); z-index: 1;"></div>
             <div class="container" style="position: relative; z-index: 2;">
                 <h2 style="color: white; -webkit-text-fill-color: white; background: none;">Structural Analysis</h2>
                 <p class="lead" style="color: #f0f9ff;">Designs and models the structural system under seismic loads using SAP2000.</p>
@@ -63,11 +54,12 @@
             </div>
         </section>
 
-        <section class="section">
-            <div class="container">
-                <h2>Materials & Construction</h2>
-                <p class="lead">Focuses on material selection, testing, and construction techniques for optimal building performance.</p>
-                <ul style="padding-left: 20px;">
+        <section class="section" style="background-image: url('assets/laser.jpeg'); background-size: cover; background-position: center; position: relative; color: white;">
+            <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.7); z-index: 1;"></div>
+            <div class="container" style="position: relative; z-index: 2;">
+                <h2 style="color: white; -webkit-text-fill-color: white; background: none;">Materials & Construction</h2>
+                <p class="lead" style="color: #f0f9ff;">Focuses on material selection, testing, and construction techniques for optimal building performance.</p>
+                <ul style="padding-left: 20px; color: white;">
                     <li>4-point bending tests</li>
                     <li>Stress-strain tests</li>
                     <li>Laser cutting</li>
