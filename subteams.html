@@ -14,6 +14,25 @@
           display: block;
         }
       }
+      
+      .study-toggle {
+        background: none;
+        border: none;
+        color: #f0f9ff;
+        font-size: 1.25rem;
+        font-family: 'Manrope', sans-serif;
+        cursor: pointer;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 10px;
+        text-align: left;
+      }
+      .study-toggle:hover { text-decoration: underline; }
+      .study-content { display: none; }
+      .study-content.active { display: block; }
+      .toggle-icon { font-weight: bold; font-size: 1.5rem; line-height: 1; }
     </style>
 </head>
 <body>
@@ -43,24 +62,37 @@
     </header>
 
     <main id="main">
-        <section class="hero hero--small" style="background-image: url('assets/Datalab.heic'); background-size: cover; background-position: center; position: relative; color: white;">
-            <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.75); z-index: 1;"></div>
-            <div class="container" style="position: relative; z-index: 2;">
-                <h2 style="color: white; -webkit-text-fill-color: white; background: none;">Structural Analysis</h2>
-                <p class="lead" style="color: #f0f9ff;">Designs and models the structural system under seismic loads using SAP2000.</p>
-            </div>
-        </section>
 
-        <section class="section" style="background-image: url('assets/Datalab.heic'); background-size: cover; background-position: center; position: relative; color: white;">
+        <section class="section" style="margin-top: -80px; padding-top: 150px; background-image: url('assets/Datalab.heic'); background-size: cover; background-position: center; position: relative; color: white;">
             <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.7); z-index: 1;"></div>
             <div class="container" style="position: relative; z-index: 2;">
                 <h2 style="color: white; -webkit-text-fill-color: white; background: none;">Structure</h2>
                 <p class="lead" style="color: #f0f9ff;">Designs and models the structural system under seismic loads using SAP2000 and Abaqus</p>
-                <ul style="padding-left: 20px; color: white;">
+                <ul style="padding-left: 40px; color: white;">
                     <li>Using structural engineering principles to optimise the load bearing system</li>
                     <li>Designing and simulating the structure in SAP2000 to predict performance under dynamic load</li>
                     <li>Using Abaqus for advanced finite element analysis, considering orthotropy and failure methods of timber</li>
+                    <li>Innovation and fabrication of a seismic damper</li>
+                    <li>Acceleration and deformation monitoring</li>
                 </ul>
+                <button class="study-toggle" aria-expanded="false">Relevant studyprograms <span class="toggle-icon">+</span></button>
+                <div class="study-content">
+                <p style="color: white; margin-bottom: 5px; font-weight: 600;">Tower design:</p>
+                <ul style="padding-left: 40px; color: white; margin-top: 0;">
+                    <li>Bygg og infrastruktur, Master 5 år</li>
+                    <li>Byggingeniør, Bachelor 3 år</li>
+                    <li>IKT og Konstruksjonsteknikk, Master 5 år</li>
+                    <li>Maskin -> Industriell Mekanikk, Master 5 år</li>
+                    <li>Maskiningeniør, Bachelor 3 år</li>
+                    <li>Marinteknikk, Master 5 år</li>
+                    <li>Georessurser og geoteknologi, Master 5 år</li>
+                    <li>Geologi, Bachelor 3 år</li>
+                </ul>
+                <p style="color: white; margin-bottom: 5px; margin-top: 15px; font-weight: 600;">Technology development:</p>
+                <ul style="padding-left: 40px; color: white; margin-top: 0;">
+                    <li>Alle ingeniør- og vitenskapsstudier</li>
+                </ul>
+                </div>
             </div>
         </section>
 
@@ -69,11 +101,18 @@
             <div class="container" style="position: relative; z-index: 2;">
                 <h2 style="color: white; -webkit-text-fill-color: white; background: none;">Architecture</h2>
                 <p class="lead" style="color: #f0f9ff;">Architectural aspects of the tower and the environmental impact assessment.</p>
-                <ul style="padding-left: 20px; color: white;">
+                <ul style="padding-left: 40px; color: white;">
                     <li>Using Rhino to create and visualize architectural concepts</li>
                     <li>Making design choices based on universal design</li>
                     <li>Environmental impact assessment</li>
                 </ul>
+                <button class="study-toggle" aria-expanded="false">Relevant studyprograms <span class="toggle-icon">+</span></button>
+                <div class="study-content">
+                <ul style="padding-left: 40px; color: white; margin-top: 0;">
+                    <li>Arkitektur, Master 5 år</li>
+                    <li>Industriell design, Master 5 år</li>
+                </ul>
+                </div>
             </div>
         </section>
 
@@ -82,12 +121,21 @@
             <div class="container" style="position: relative; z-index: 2;">
                 <h2 style="color: white; -webkit-text-fill-color: white; background: none;">Materials & Construction</h2>
                 <p class="lead" style="color: #f0f9ff;">Focuses on material selection, testing, and construction techniques for optimal building performance.</p>
-                <ul style="padding-left: 20px; color: white;">
+                <ul style="padding-left: 40px; color: white;">
                     <li>4-point bending tests</li>
                     <li>Stress-strain tests</li>
                     <li>Laser cutting</li>
                     <li>Assembly</li>
                 </ul>
+                <button class="study-toggle" aria-expanded="false">Relevant studyprograms <span class="toggle-icon">+</span></button>
+                <div class="study-content">
+                <ul style="padding-left: 40px; color: white; margin-top: 0;">
+                    <li>Bygg og infrastruktur, Master 5 år</li>
+                    <li>Byggingeniør, Bachelor 3 år</li>
+                    <li>Materialteknologi, Master 5 år</li>
+                    <li>Logistikk, Bachelor 3 år</li>
+                </ul>
+                </div>
             </div>
         </section>
     </main>
@@ -106,5 +154,16 @@
     </footer>
 
     <script src="app.js"></script>
+    <script>
+      document.querySelectorAll('.study-toggle').forEach(button => {
+        button.addEventListener('click', () => {
+          const content = button.nextElementSibling;
+          const isActive = content.classList.toggle('active');
+          button.setAttribute('aria-expanded', isActive);
+          const icon = button.querySelector('.toggle-icon');
+          icon.textContent = isActive ? '-' : '+';
+        });
+      });
+    </script>
 </body>
 </html>
