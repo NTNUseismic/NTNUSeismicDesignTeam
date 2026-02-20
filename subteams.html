@@ -6,6 +6,15 @@
     <title>Subteams - NTNU Seismic Competition Team</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+      /* This style block fixes an issue where the navigation disappears on certain screen sizes
+         by ensuring the mobile navigation toggle appears at the correct breakpoint. */
+      @media (max-width: 992px) {
+        .nav-toggle {
+          display: block;
+        }
+      }
+    </style>
 </head>
 <body>
    <header class="header">
@@ -42,11 +51,25 @@
             </div>
         </section>
 
-        <section class="section section--accent">
-            <div class="container">
-                <h2>Architecture</h2>
-                <p class="lead">Architectural aspects of the tower and the environmental impact assessment.</p>
-                <ul style="padding-left: 20px;">
+        <section class="section" style="background-image: url('assets/Datalab.heic'); background-size: cover; background-position: center; position: relative; color: white;">
+            <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.7); z-index: 1;"></div>
+            <div class="container" style="position: relative; z-index: 2;">
+                <h2 style="color: white; -webkit-text-fill-color: white; background: none;">Structure</h2>
+                <p class="lead" style="color: #f0f9ff;">Designs and models the structural system under seismic loads using SAP2000 and Abaqus</p>
+                <ul style="padding-left: 20px; color: white;">
+                    <li>Using structural engineering principles to optimise the load bearing system</li>
+                    <li>Designing and simulating the structure in SAP2000 to predict performance under dynamic load</li>
+                    <li>Using Abaqus for advanced finite element analysis, considering orthotropy and failure methods of timber</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section" style="background-image: url('assets/Architecture.jpg'); background-size: cover; background-position: center; position: relative; color: white;">
+            <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.7); z-index: 1;"></div>
+            <div class="container" style="position: relative; z-index: 2;">
+                <h2 style="color: white; -webkit-text-fill-color: white; background: none;">Architecture</h2>
+                <p class="lead" style="color: #f0f9ff;">Architectural aspects of the tower and the environmental impact assessment.</p>
+                <ul style="padding-left: 20px; color: white;">
                     <li>Using Rhino to create and visualize architectural concepts</li>
                     <li>Making design choices based on universal design</li>
                     <li>Environmental impact assessment</li>
