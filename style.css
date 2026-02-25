@@ -521,12 +521,20 @@ body{font-family: 'Manrope', system-ui, -apple-system, "Segoe UI", Roboto, "Helv
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 }
-
+.team-leads-box {
+max-height: fit-content;
+background: rgba(0,0,0, 0.1);
+padding: 20px;
+padding-bottom: 20px;
+border-radius: 10px;
+margin-bottom: 30px;
+}
 .team-leads {
-  display: flex;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
   gap: 20px;
-  margin-bottom: 40px;
-  flex-wrap: wrap;
+  flex-wrap:nowrap;
+  
 }
 
 .team-leads .card {
