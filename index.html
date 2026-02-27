@@ -13,6 +13,7 @@
       gtag('config', 'G-N6WW48L2GD');
     </script>
     <title>NTNU Seismic Design Team</title>
+    <meta name="description" content="The NTNU Seismic Design Team represents the Norwegian University of Science and Technology in the international EERI Seismic Design Competition.">
     <link rel="icon" href="assets/logo_favicon.png">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
@@ -152,7 +153,7 @@
           <h2>Contact</h2>
           <p class="muted">For enquiries, email us using the address below:</p>
           <address>
-            <p>Email: <a href="mailto:contact@ntnu-seismic-team.no">ringrosedaniel@gmail.com</a></p>
+            <p>Email: <a href="mailto:ntnuseismic@gmail.com">ntnuseismic@gmail.com</a></p>
             <p>Address: Høgskoleringen 1, 7034 Trondheim, Norway</p>
           </address>
         </div>
@@ -180,13 +181,17 @@
 
     <script>
       const popup = document.getElementById('join-popup');
-      popup.style.display = 'block';
+      // Check if user has previously closed the popup
+      if (!localStorage.getItem('joinPopupClosed')) {
+        popup.style.display = 'block';
+      }
       popup.addEventListener('click', function() {
         window.location.href = 'contact.html';
       });
       document.getElementById('close-popup').addEventListener('click', function(e) {
         e.stopPropagation();
         popup.style.display = 'none';
+        localStorage.setItem('joinPopupClosed', 'true');
       });
     </script>
 
