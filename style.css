@@ -1630,3 +1630,54 @@ body {
   from { transform: translateY(20px); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }
 }
+
+/* Sponsor page section backgrounds and layout */
+.sponsor-section {
+  padding: 80px 0;
+  text-align: center;
+}
+.sponsor-main {
+  background-color: #f5f5f5;
+}
+.sponsor-partner {
+  background-color: #e3f6fd;
+}
+.sponsor-gold {
+  background-color: #fff8e1;
+}
+.sponsor-silver {
+  background-color: #f0f0f0;
+}
+.sponsor-bronze {
+  background-color: #fbe9e7;
+}
+
+/* Flexbox container for the logos */
+.sponsor-logos {
+  display: flex;
+  justify-content: center; /* Centers them horizontally */
+  align-items: center;     /* Centers them vertically against each other */
+  gap: 40px;               /* Adds space between the two logos */
+  flex-wrap: wrap;         /* Allows them to stack on small mobile screens */
+  margin-top: 20px;
+}
+
+/* Set a uniform height for both logos */
+.sponsor-logos img {
+  height: 80px;            /* Adjust this value to your preferred size */
+  width: auto;             /* Maintains the aspect ratio */
+  display: block;
+}
+
+/* Responsive adjustment for mobile */
+@media (max-width: 992px) {
+  .nav-toggle {
+    display: block;
+  }
+  .sponsor-logos {
+    gap: 20px;
+  }
+  .sponsor-logos img {
+    height: 60px;          /* Slightly smaller on mobile devices */
+  }
+}
