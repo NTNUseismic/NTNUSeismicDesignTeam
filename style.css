@@ -964,6 +964,83 @@ h2 {
   color: var(--accent);
 }
 
+/* Specific glimmer for sponsor headings */
+.sponsor-main h2 {
+  background: linear-gradient(90deg, #0b2540, #00aaff, #0b2540);
+  background-size: 200% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: text-shimmer-blue 4s linear infinite;
+}
+
+.sponsor-partner h2 {
+  background: linear-gradient(90deg, #000000, #cccccc, #000000);
+  background-size: 200% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: text-shimmer-black 4s linear infinite;
+}
+
+.sponsor-gold h2 {
+  background: linear-gradient(90deg, #f57c00, #ffeb3b, #f57c00);
+  background-size: 200% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: text-shimmer-gold 4s linear infinite;
+}
+
+.sponsor-silver h2 {
+  background: linear-gradient(90deg, #424242, #e0e0e0, #424242);
+  background-size: 200% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: text-shimmer-silver 4s linear infinite;
+}
+
+.sponsor-bronze h2 {
+  background: linear-gradient(90deg, #6d4c41, #bcaaa4, #6d4c41);
+  background-size: 200% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: text-shimmer-bronze 4s linear infinite;
+}
+
+/* Keyframes for text shimmer */
+@keyframes text-shimmer-blue {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes text-shimmer-black {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes text-shimmer-gold {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes text-shimmer-silver {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes text-shimmer-bronze {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 /* Section enhancements */
 .section {
   padding: 80px 0;
@@ -1635,36 +1712,23 @@ body {
 .sponsor-section {
   padding: 80px 0;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 .sponsor-main {
   background-color: #e3f2fd; /* Light blue base */
-  animation: glimmer-blue 3s ease-in-out infinite;
 }
 .sponsor-partner {
-  background-color: #e3f6fd;
+  background-color: #ffffff;
 }
 .sponsor-gold {
   background-color: #fff8e1; /* Light gold base */
-  animation: glimmer-gold 3s ease-in-out infinite;
 }
 .sponsor-silver {
   background-color: #f0f0f0;
 }
 .sponsor-bronze {
   background-color: #fbe9e7;
-}
-
-/* Keyframes for glimmer animations */
-@keyframes glimmer-blue {
-  0% { background-color: #e3f2fd; }
-  50% { background-color: #bbdefb; }
-  100% { background-color: #e3f2fd; }
-}
-
-@keyframes glimmer-gold {
-  0% { background-color: #fff8e1; }
-  50% { background-color: #ffecb3; }
-  100% { background-color: #fff8e1; }
 }
 
 /* Flexbox container for the logos */
