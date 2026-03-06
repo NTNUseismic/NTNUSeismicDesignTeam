@@ -1637,19 +1637,34 @@ body {
   text-align: center;
 }
 .sponsor-main {
-  background-color: #f5f5f5;
+  background-color: #e3f2fd; /* Light blue base */
+  animation: glimmer-blue 3s ease-in-out infinite;
 }
 .sponsor-partner {
   background-color: #e3f6fd;
 }
 .sponsor-gold {
-  background-color: #fff8e1;
+  background-color: #fff8e1; /* Light gold base */
+  animation: glimmer-gold 3s ease-in-out infinite;
 }
 .sponsor-silver {
   background-color: #f0f0f0;
 }
 .sponsor-bronze {
   background-color: #fbe9e7;
+}
+
+/* Keyframes for glimmer animations */
+@keyframes glimmer-blue {
+  0% { background-color: #e3f2fd; }
+  50% { background-color: #bbdefb; }
+  100% { background-color: #e3f2fd; }
+}
+
+@keyframes glimmer-gold {
+  0% { background-color: #fff8e1; }
+  50% { background-color: #ffecb3; }
+  100% { background-color: #fff8e1; }
 }
 
 /* Flexbox container for the logos */
