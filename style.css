@@ -1760,3 +1760,32 @@ body {
     height: 60px;          /* Slightly smaller on mobile devices */
   }
 }
+/* Layout for the About section */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr; /* Text gets 60%, GIF gets 40% */
+  gap: 40px;
+  align-items: center; /* Vertically centers the GIF next to the text */
+}
+
+.about-visual {
+  text-align: center;
+}
+
+.side-gif {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Optional: rounds the corners slightly */
+}
+
+/* Responsive adjustment for mobile */
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr; /* Stacks them on top of each other */
+  }
+  
+  .about-visual {
+    order: -1; /* Optional: puts the GIF above the text on mobile */
+    margin-bottom: 20px;
+  }
+}
