@@ -90,4 +90,27 @@ document.addEventListener("DOMContentLoaded", () => {
       }, 800);
     });
   }
+
+  // Activities slider functionality
+  const slides = document.querySelector('.slides');
+  const leftArrow = document.querySelector('.left-arrow');
+  const rightArrow = document.querySelector('.right-arrow');
+  let currentIndex = 0;
+  const totalSlides = 3;
+
+  function updateSlide() {
+    slides.style.transform = `translateX(-${currentIndex * (100 / totalSlides)}%)`;
+  }
+
+  if (leftArrow && rightArrow && slides) {
+    leftArrow.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+      updateSlide();
+    });
+
+    rightArrow.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % totalSlides;
+      updateSlide();
+    });
+  }
 });
